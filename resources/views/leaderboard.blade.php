@@ -19,7 +19,7 @@
                         <tbody>
                         @php $i = 1; @endphp
                         @forelse($users as $player)
-                            <tr {{$player->id === auth()->user()->id ? 'id=show_me class=bg-base-200' : ''}}>
+                            <tr {{((auth()->user()) AND ($player->id === auth()->user()->id)) ? 'id=show_me class=bg-base-200' : ''}}>
                                 <th>{{$i++}}</th>
                                 <td>{{$player->name}}</td>
                                 <td><span class="badge badge-soft badge-accent">{{$player->class}}.</span></td>
