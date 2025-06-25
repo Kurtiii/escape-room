@@ -1,0 +1,60 @@
+<p class="text-lg font-semibold mb-4">
+    Ergänzen Sie die folgende Tabelle vollständig. Führen Sie die notwendigen Berechnung.<br />
+    Entscheide dann, welches Set einen besseren Deckungsbeitrag pro Verkaufseinheit hat.
+</p>
+
+<div class="overflow-x-auto mb-6">
+    <table class="table w-full">
+        <thead>
+        <tr>
+            <th>Produkt</th>
+            <th>Verkaufspreis pro Set (p)</th>
+            <th>Variable Kosten pro Set (k_v)</th>
+            <th>Deckungsbeitrag pro Set (db)</th>
+            <th>Absatzmenge (x)</th>
+            <th>Gesamt-Deckungsbeitrag (DB)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Set „Basis“</td>
+            <td>20,00€</td>
+            <td>12,00€</td>
+            <td class="db-basis">
+                <input type="number" class="input input-bordered w-24" placeholder="db" data-product="basis" data-type="db" />€
+            </td>
+            <td>800 Stück</td>
+            <td class="db-total-basis">
+                <input type="number" class="input input-bordered w-28" placeholder="Gesamt-DB" data-product="basis" data-type="total-db" />
+            </td>
+        </tr>
+        <tr>
+            <td>Set „Profi“</td>
+            <td>35,00€</td>
+            <td>19,00€</td>
+            <td class="db-profi">
+                <input type="number" class="input input-bordered w-24" placeholder="db" data-product="profi" data-type="db" />€
+            </td>
+            <td>400 Stück</td>
+            <td class="db-total-profi">
+                <input type="number" class="input input-bordered w-28" placeholder="Gesamt-DB" data-product="profi" data-type="total-db" />
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="flex flex-row gap-4 mt-6" id="set-selection-options">
+    <div class="form-control">
+        <label class="label cursor-pointer card card-compact bg-base-200 shadow-xl p-4">
+            <span class="label-text text-xl">Set „Profi“</span>
+            <input type="radio" name="best_set" value="profi" class="radio radio-primary" />
+        </label>
+    </div>
+    <div class="form-control">
+        <label class="label cursor-pointer card card-compact bg-base-200 shadow-xl p-4">
+            <span class="label-text text-xl">Set „Basis“</span>
+            <input type="radio" name="best_set" value="basis" class="radio radio-primary" />
+        </label>
+    </div>
+</div>

@@ -1,0 +1,127 @@
+<p class="text-lg font-semibold mb-4">
+    Welche Anlage ist bei einer geplanten Produktion von 20.000 Stück am kostengünstigsten?
+</p>
+
+<div class="overflow-x-auto mb-6">
+    <table class="table w-full">
+        <thead>
+        <tr>
+            <th>Kostenart</th>
+            <th>Einheit</th>
+            <th>Anlage A (Günstig)</th>
+            <th>Anlage B (Mittel)</th>
+            <th>Anlage C (Premium)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Anschaffungskosten (AK)</td>
+            <td>€</td>
+            <td>80.000</td>
+            <td>150.000</td>
+            <td>250.000</td>
+        </tr>
+        <tr>
+            <td>Nutzungsdauer (ND)</td>
+            <td>Jahre</td>
+            <td>5</td>
+            <td>8</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Restwert (RW)</td>
+            <td>€</td>
+            <td>5.000</td>
+            <td>15.000</td>
+            <td>30.000</td>
+        </tr>
+        <tr>
+            <td colspan="5"></td>
+        </tr>
+        <tr>
+            <td>Kalkulatorischer Zinssatz</td>
+            <td>% p.a.</td>
+            <td>6%</td>
+            <td>6%</td>
+            <td>6%</td>
+        </tr>
+        <tr>
+            <td>Feste Wartungskosten</td>
+            <td>€ / Jahr</td>
+            <td>2.000</td>
+            <td>1.500</td>
+            <td>1.000</td>
+        </tr>
+        <tr>
+            <td>Raumkosten (fix)</td>
+            <td>€ / Jahr</td>
+            <td>3.000</td>
+            <td>3.500</td>
+            <td>4.000</td>
+        </tr>
+        <tr>
+            <td>Versicherung (fix)</td>
+            <td>€ / Jahr</td>
+            <td>800</td>
+            <td>1.200</td>
+            <td>1.800</td>
+        </tr>
+        <tr>
+            <td>Variable Kosten pro Stück:↓</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Materialkosten</td>
+            <td>€ / Stück</td>
+            <td>3,5</td>
+            <td>3,2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Energiekosten</td>
+            <td>€ / Stück</td>
+            <td>1</td>
+            <td>0,8</td>
+            <td>0,5</td>
+        </tr>
+        <tr>
+            <td>Lohnkosten (Fertigung)</td>
+            <td>€ / Stück</td>
+            <td>2,5</td>
+            <td>2</td>
+            <td>1,5</td>
+        </tr>
+        <tr>
+            <td>Variable Wartung/Reparatur</td>
+            <td>€ / Stück</td>
+            <td>0,5</td>
+            <td>0,3</td>
+            <td>0,2</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="flex flex-row gap-4 mt-6" id="anlage-selection-options">
+    <div class="form-control">
+        <label class="label cursor-pointer card card-compact bg-base-200 shadow-xl p-4">
+            <span class="label-text text-xl">Anlage A</span>
+            <input type="radio" name="best_anlage" value="A" class="radio radio-primary" />
+        </label>
+    </div>
+    <div class="form-control">
+        <label class="label cursor-pointer card card-compact bg-base-200 shadow-xl p-4">
+            <span class="label-text text-xl">Anlage B</span>
+            <input type="radio" name="best_anlage" value="B" class="radio radio-primary" />
+        </label>
+    </div>
+    <div class="form-control">
+        <label class="label cursor-pointer card card-compact bg-base-200 shadow-xl p-4">
+            <span class="label-text text-xl">Anlage C</span>
+            <input type="radio" name="best_anlage" value="C" class="radio radio-primary" />
+        </label>
+    </div>
+</div>
