@@ -18,13 +18,18 @@
                         </thead>
                         <tbody>
                         @php $i = 1; @endphp
-                        @foreach($users as $player)
+                        @forelse($users as $player)
                             <tr {{$player->id === auth()->user()->id ? 'id=show_me class=bg-base-200' : ''}}>
                                 <th>{{$i++}}</th>
                                 <td>{{$player->name}}</td>
                                 <td><span class="badge badge-soft badge-accent">{{$player->class}}.</span></td>
                                 <td>{{\Carbon\CarbonInterval::seconds($player->seconds_needed)->cascade()->forHumans()}}</td>
-                        @endforeach
+
+                        @else
+                            <tr>
+                                <td colspan="4" class="text-center">Keine Einträge gefunden</td>
+                            </tr>
+                        @endforelse
                     </table>
                 </div>
 
