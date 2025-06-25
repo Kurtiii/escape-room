@@ -40,7 +40,7 @@
     <div class="flex flex-row justify-between items-center text-xs text-gray-500">
         <div><i class="fa-regular fa-user"></i> {{$question->author}}</div>
         <div>
-            <button class="btn btn-xs"><i class="fa-brands fa-github"></i> Edit on GitHub</button>
+            <a href="https://github.com/Kurtiii/escape-room/tree/main/public/questions/{{$question->id}}" class="btn btn-xs"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
         </div>
     </div>
     <div class="divider mt-2 mb-5"></div>
