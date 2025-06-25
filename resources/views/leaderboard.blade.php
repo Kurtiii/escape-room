@@ -25,7 +25,7 @@
                                 <td><span class="badge badge-soft badge-accent">{{$player->class}}.</span></td>
                                 <td>{{\Carbon\CarbonInterval::seconds($player->seconds_needed)->cascade()->forHumans()}}</td>
 
-                        @else
+                        @empty
                             <tr>
                                 <td colspan="4" class="text-center">Keine Einträge gefunden</td>
                             </tr>
